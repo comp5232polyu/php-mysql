@@ -19,7 +19,7 @@ include('vars.php');
 
 //Query the DB
 global $mysqli;
-$strsql = "select * from stock";
+$strsql = "select * from stock order by id desc ";
 if ($result = $mysqli->query($strsql)) {
    // printf("<br>Select returned %d rows.\n", $result->num_rows);
 	while ($row = $result->fetch_object()) {
@@ -56,7 +56,7 @@ if (file_exists("views/$lll_route.tpl")) {
 } else {
 	echo "\"$lll_route\" page not found";
 	ob_start();
-	require_once("views/home.tpl");
+	require_once("views/home3.tpl");
 	$lllpage = ob_get_contents();
 	ob_end_clean();
 

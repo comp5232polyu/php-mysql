@@ -42,7 +42,11 @@
           <div class="container">
             <div class="navbar-header">
               <!-- Logo Starts -->
-              <a class="navbar-brand" href="#home"><img src="images/logo.png" alt="logo"></a>
+              <a class="navbar-brand" href="#home"><?php echo $site_title; ?>
+                <!--    
+                  <img src="images/logo.png" alt="logo">
+                -->
+                </a>
               <!-- #Logo Ends -->
 
 
@@ -82,6 +86,26 @@
 
 <!-- works -->
 <div id="works"  class=" clearfix grid"> 
+    
+    <?php 
+            
+				foreach($items as $item) {  ?>
+    <figure class="effect-oscar  wowload fadeIn">
+
+        <img src="static/images/<?php echo $item->IMGSRC ?>" alt="img01"/>
+
+        <figcaption>
+            <h2><?php echo $item->TITLE; ?></h2>
+            <p>Lily likes to play with crayons and pencils<br>
+            <a href="desc?id=<?php echo $item->ID ?>" title="1" data-gallery>View more</a></p>            
+        </figcaption>
+    </figure>
+
+			<?php
+
+				}
+			 ?>
+    
     <figure class="effect-oscar  wowload fadeIn">
         <img src="images/portfolio/1.jpg" alt="img01"/>
         <figcaption>
