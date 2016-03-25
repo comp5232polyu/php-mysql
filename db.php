@@ -17,8 +17,8 @@
 -->
 
 <?php
-//if(!$_ENV["VCAP_SERVICES"]){ //local dev
-if(true){ //local dev
+if(!$_ENV["VCAP_SERVICES"]){ //local dev
+//if(true){ //local dev
     $mysql_server_name = "127.0.0.1:3306";
     $mysql_username = "root";
     $mysql_password = "";
