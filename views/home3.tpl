@@ -236,7 +236,7 @@ We also understand how important to communicate with our fans, so we have launch
 <!-- Footer Starts -->
 <div class="footer text-center spacer">
 <p class="wowload flipInX">
-<a href="http://www.facebook.com/coolstorehk" target="_blank"><i ><img src="images/facebook.png" style="width:51px;height=34px"/></i></a><a href="mailto:comp5232polyu@gmail.com" target="_blank"><i ><img src="images/email_logo.png" style="width:40px;height=30px"/></i></a>
+<a href="http://www.facebook.com/coolstorehk" target="_blank"><i ><img src="images/facebook.png" style="width:51px;height=34px"/></i></a><a href="mailto:comp5232.polyu@gmail.com" target="_blank"><i ><img src="images/email_logo.png" style="width:40px;height=30px"/></i></a>
 </p>
 Copyright 2016 Cool Toy Store. All rights reserved.
 </div>
