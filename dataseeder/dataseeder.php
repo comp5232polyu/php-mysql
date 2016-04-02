@@ -1,5 +1,5 @@
 <?php
-include('../db.php');
+include('../db2.php');
 include('../vars.php');
 
 global $mysqli;
@@ -20,14 +20,35 @@ if ($result) {
 
 // Populate the table
 $prints = array(
-    array(1, "An advanced digital camera with interchangable lenses.",
-     'camera01.jpg', 9000, 6, 'Digital Camera'),
-
-    array(2, "This external HDD is compatible with USB 3.0 for fast transfers.",
+    array(1, "This external HDD is compatible with USB 3.0 for fast transfers.",
      'hdd02.jpg', 600, 10, 'External Hard Disk Drive'),
+	
+	array(2, "An advanced digital camera with interchangable lenses.",
+     'camera01.jpg', 9000, 1, 'Digital Camera'),
 	 
     array(3, "A stylish watch that can pair with your smartphone to show notifications.",
-     'watch03.jpg', 100, 0, 'Smart Watch')
+     'watch03.jpg', 100, 0, 'Smart Watch'),
+	 
+	
+	array(4, "An advanced digital camera with interchangable lenses.",
+     'camera01.jpg', 9000, 1, 'Digital Camera'),
+	 
+    array(5, "A stylish watch that can pair with your smartphone to show notifications.",
+     'watch03.jpg', 100, 0, 'Smart Watch'),
+	 
+    array(6, "This external HDD is compatible with USB 3.0 for fast transfers.",
+     'hdd02.jpg', 600, 10, 'External Hard Disk Drive'),
+	 
+	array(7, "This external HDD is compatible with USB 3.0 for fast transfers.",
+     'hdd02.jpg', 600, 10, 'External Hard Disk Drive'),
+	 
+	     array(8, "A stylish watch that can pair with your smartphone to show notifications.",
+     'watch03.jpg', 100, 0, 'Smart Watch'),
+	 
+	array(9, "An advanced digital camera with interchangable lenses.",
+     'camera01.jpg', 9000, 1, 'Digital Camera')
+
+
     
 );
 

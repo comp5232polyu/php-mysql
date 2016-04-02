@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Cyrus Studio</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title><?php echo $site_title; ?></title>
 
-<!-- Google fonts -->
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+	<!-- Google fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
 
-<!-- font awesome -->
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- font awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-<!-- bootstrap -->
-<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
 
-<!-- animate.css -->
-<link rel="stylesheet" href="assets/animate/animate.css" />
-<link rel="stylesheet" href="assets/animate/set.css" />
+	<!-- animate.css -->
+	<link rel="stylesheet" href="assets/animate/animate.css" />
+	<link rel="stylesheet" href="assets/animate/set.css" />
 
-<!-- gallery -->
-<link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
+	<!-- gallery -->
+	<link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
 
-<!-- favicon -->
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-
-
-<link rel="stylesheet" href="assets/style.css">
-
+	<!-- favicon -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	
+	<!-- css -->
+	<link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
@@ -42,13 +41,10 @@
           <div class="container">
             <div class="navbar-header">
               <!-- Logo Starts -->
-              <a class="navbar-brand" href="#home"><?php echo $site_title; ?>
-                <!--    
-                  <img src="images/logo.png" alt="logo">
-                -->
+              <a class="navbar-brand" href="#works">
+                <img src="images/company_logo.png" alt="logo">
                 </a>
               <!-- #Logo Ends -->
-
 
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -56,9 +52,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-
             </div>
-
 
             <!-- Nav Starts -->
             <div class="navbar-collapse  collapse">
@@ -66,7 +60,7 @@
                  <li class="active"><a href="#works">Home</a></li>
                  <li ><a href="#about">About</a></li>
                  <li ><a href="#partners">Partners</a></li>
-                 <li ><a href="#contact">Contact</a></li>
+                 <!--<li ><a href="mailto:comp5232polyu@gmail.com">Contact</a></li>-->
               </ul>
             </div>
             <!-- #Nav Ends -->
@@ -78,182 +72,41 @@
     </div>
 <!-- #Header Starts -->
 
-
-
-
-
-
-
 <!-- works -->
-<div id="works"  class=" clearfix grid"> 
-    
-    <?php 
-            
-				foreach($items as $item) {  ?>
-    <figure class="effect-oscar  wowload fadeIn">
-
-        <img src="static/images/<?php echo $item->IMGSRC ?>" alt="img01"/>
-
-        <figcaption>
-            <h2><?php echo $item->TITLE; ?></h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="desc?id=<?php echo $item->ID ?>" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-
-			<?php
-
-				}
-			 ?>
-    
-    <figure class="effect-oscar  wowload fadeIn">
-        <img src="images/portfolio/1.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Nature</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="images/portfolio/1.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/2.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Events</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="images/portfolio/2.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/3.jpg" alt="img01"/>
-        <figcaption>
-            <h2>music</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="images/portfolio/3.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/4.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Vintage</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="images/portfolio/4.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/5.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Typers</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="images/portfolio/5.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-     
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/6.jpg" alt="img01"/>
-        <figcaption>
-            <h2>hotel</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="images/portfolio/6.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-    <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/7.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Chinese</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="images/portfolio/7.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-    <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/8.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Dicrap</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="images/portfolio/8.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-    <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/9.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Coffee</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="images/portfolio/9.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-    <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/10.jpg" alt="img01"/>
-        <figcaption>
-            <h2>cameras</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="images/portfolio/10.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-    <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/11.jpg" alt="img01"/>
-        <figcaption>
-            <h2>design</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="images/portfolio/11.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-    <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/12.jpg" alt="img01"/>
-        <figcaption>
-            <h2>studio</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="images/portfolio/12.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-    
-
-     
+<div id="works"  class=" clearfix grid">     
+    <?php foreach($items as $item) {  ?>
+		<figure class="effect-oscar  wowload fadeInUp">
+			<img src="static/images/<?php echo $item->IMGSRC ?>"/>
+			<figcaption>
+				<h2><?php echo $item->TITLE; ?></h2>
+				<p><a href="desc3?id=<?php echo $item->ID ?>">View more</a></p>
+			</figcaption>
+		</figure>
+	<?php } ?>    
 </div>
 <!-- works -->
-
-
-
-
-
 
 <!-- Cirlce Starts -->
 <div id="about"  class="container spacer about">
-<h2 class="text-center wowload fadeInUp">Creative digital agency based on London</h2>  
+<h2 class="text-center wowload fadeInUp">Enjoy Every Childhood Moment</h2>  
   <div class="row">
   <div class="col-sm-6 wowload fadeInLeft">
-    <h4><i class="fa fa-paint-brush"></i> Design</h4>
-    <p>Creative digital agency for sleek and sophisticated solutions for mobile, websites and software designs, lead by passionate and uber progressive team that lives and breathes design. Creative digital agency for sleek and sophisticated solutions for mobile, websites and software designs.</p>
+    <h4><i class="fa fa-paint-brush"></i>Who are we?</h4>
+    <p align="justify">Cool Toy Store was found in 2015 April by 5 young men who are enthusiastic in collecting toy figures. We believe there is a vitality in toys as every tiny piece of toy brings us invaluable childhood memories and fun. We also love to share our experiences & joy in playing toy figures so we decided to create an online toy platforms to let the toy lovers to be able to explore their favorite toy collection in here. Providing affordable and high quality of toy pieces has been a goal of our company. We mainly sell action figures of different Japanese comic characters and also sell other kinds of toys like radio controlled cars and Lego, etc. To ensure the quality of the products we sell, we also provide certificate along with every pieces of toy we sold.</p>
     
-
   </div>
   <div class="col-sm-6 wowload fadeInRight">
-  <h4><i class="fa fa-code"></i> Frontend & Backend Development</h4>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>    
+  <h4><i class="fa fa-code"></i>What are we selling?</h4>
+  <p align="justify">In our online toy platform, we collect the most latest & hot news about the toy industry, we also provide pictures / videos of every trendy toy products that we sell. 
+Customers are able to receive first-hand information about the current toy trend and products that we offered in our retail stores.
+We mainly source our toys from a few wholesale toy manufacturers in Japan and we also source vintage toys with some vintage toys collectors.
+We aim to provide superior customer service/after service to our customers so we tend to share a little bit more background information of the toy products we sold, the knowledge of how to keep the toy in good condition and even offer free toy maintenance service to customers.
+We also understand how important to communicate with our fans, so we have launched a number of campaigns and competitions last year e.g. Star war figures cosplay contest2015 and Radio-controlled car competition2015 which aim to promote the toy culture in Hong Kong. And it receives much positive feedback from our fans. Our retail toy store is currently located in Shum shui po which is operated since 2015 April. In 2016 January, we have a business expansion and opened our second retail shop in Mongkok.
+</p>    
   </div>
-  </div>
-
-  <div class="process">
-  <h3 class="text-center wowload fadeInUp">Process</h3>
-  <ul class="row text-center list-inline  wowload bounceInUp">
-      <li>
-            <span><i class="fa fa-history"></i><b>Research</b></span>
-        </li>
-        <li>
-            <span><i class="fa fa-puzzle-piece"></i><b>Plan</b></span>
-        </li>
-        <li>
-            <span><i class="fa fa-database"></i><b>Develop</b></span>
-        </li>
-        <li>
-            <span><i class="fa fa-magic"></i><b>Integration</b></span>
-        </li>        
-        <li>
-            <span><i class="fa fa-cloud-upload"></i><b>Deliver</b></span>
-        </li>
-    </ul>
   </div>
 </div>
 <!-- #Cirlce Ends -->
-
-
 
 <!-- About Starts -->
 <div class="highlight-info">
@@ -264,13 +117,13 @@
   <i class="fa fa-smile-o  fa-5x"></i><h4>24 Clients</h4>
   </div>
   <div class="col-sm-3 col-xs-6">
-  <i class="fa fa-rocket  fa-5x"></i><h4>75 Projects</h4>
+  <i class="fa fa-rocket  fa-5x"></i><h4>1000 Toys</h4>
   </div>
   <div class="col-sm-3 col-xs-6">
-  <i class="fa fa-cloud-download  fa-5x"></i><h4>454 Downloads</h4>
+  <i class="fa fa-cloud-download  fa-5x"></i><h4>500 Downloads</h4>
   </div>
   <div class="col-sm-3 col-xs-6">
-  <i class="fa fa-map-marker fa-5x"></i><h4>2 Offices</h4>
+  <i class="fa fa-map-marker fa-5x"></i><h4>2 Shops</h4>
   </div>
 </div>
 </div>
@@ -279,22 +132,14 @@
 <!-- About Ends -->
 
 
-
-
-
-
-
 <div id="partners" class="container spacer ">
 	<h2 class="text-center  wowload fadeInUp">Some of our happy clients</h2>
   <div class="clearfix">
-    <div class="col-sm-6 partners  wowload fadeInLeft">
-         <img src="images/partners/1.jpg" alt="partners">
-         <img src="images/partners/2.jpg" alt="partners">
-         <img src="images/partners/3.jpg" alt="partners">
-         <img src="images/partners/4.jpg" alt="partners">
+    <div class="col-sm-4 partners  wowload fadeInLeft">
+         <a href="http://www.ibm.com/cloud-computing/bluemix/" target="_blank"><img src="images/partners/bluemix.png" alt="IBM Bluemix" style="width:300px;height:110px"></a>
+         <a href="https://github.com/" target="_blank"><img src="images/partners/github.png" alt="Github" style="width:240px;height:80px"></a>
     </div>
     <div class="col-sm-6">
-
 
     <div id="carousel-testimonials" class="carousel slide testimonails  wowload fadeInRight" data-ride="carousel">
     <div class="carousel-inner">  
@@ -329,120 +174,74 @@
   	</ol>
   	<!-- Indicators -->
   </div>
-
-
-
     </div>
   </div>
 
 
 <!-- team -->
 <h3 class="text-center  wowload fadeInUp">Our team</h3>
-<p class="text-center  wowload fadeInLeft">Our creative team that is making everything possible</p>
-<div class="row grid team  wowload fadeInUpBig">	
-	<div class=" col-sm-3 col-xs-6">
+<p class="text-center  wowload fadeInLeft">Our energetic team that is making everything possible</p>
+<div class="row grid team wowload fadeInUpBig">
+	
+	<div class=" col-sm-2 col-xs-4" >
+	<figure class="effect-chico">
+        <img src="images/team/12.jpg" alt="img01" class="img-responsive" />
+        <figcaption style="font-size: 1em">
+            <p><b>Sunny Lau</b><br>CEO</p>            
+        </figcaption>
+    </figure>
+    </div>
+	
+	<div class=" col-sm-2 col-xs-4">
+	<figure class="effect-chico">
+        <img src="images/team/19.jpg" alt="img01" class="img-responsive" />
+        <figcaption style="font-size: 1em">
+            <p><b>Aris Leung</b><br>CEO</p>             
+        </figcaption>
+    </figure>
+    </div>
+	
+	<div class=" col-sm-2 col-xs-4">
+	<figure class="effect-chico">
+        <img src="images/team/10.jpg" alt="img01" class="img-responsive" />
+        <figcaption style="font-size: 1em">
+            <p><b>Philip Yip</b><br>Merchandizing Manager</p>            
+        </figcaption>
+    </figure>
+    </div>
+
+	<div class=" col-sm-2 col-xs-4">
 	<figure class="effect-chico">
         <img src="images/team/8.jpg" alt="img01" class="img-responsive" />
-        <figcaption>
-            <p><b>Barbara Husto</b><br>Senior Designer<br><br><a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></p>            
+        <figcaption style="font-size: 1em">
+            <p><b>Yoyo Yiu</b><br>Account & Budget Manager</p>                    
         </figcaption>
     </figure>
     </div>
-
-    <div class=" col-sm-3 col-xs-6">
+	
+		<div class=" col-sm-2 col-xs-4">
 	<figure class="effect-chico">
-        <img src="images/team/10.jpg" alt="img01"/>
-        <figcaption>            
-            <p><b>Barbara Husto</b><br>Senior Designer<br><br><a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></p>            
+        <img src="images/team/17.jpg" alt="img01" class="img-responsive" />
+        <figcaption style="font-size: 1em">
+            <p><b>Becky Yeung</b><br>Sales & Marketing Manager</p>            
         </figcaption>
     </figure>
     </div>
-
-    <div class=" col-sm-3 col-xs-6">
-	<figure class="effect-chico">
-        <img src="images/team/12.jpg" alt="img01"/>
-        <figcaption>
-            <p><b>Barbara Husto</b><br>Senior Designer<br><br><a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></p>          
-        </figcaption>
-    </figure>
-    </div>
-
-    <div class=" col-sm-3 col-xs-6">
-	<figure class="effect-chico">
-        <img src="images/team/17.jpg" alt="img01"/>
-        <figcaption>
-            <p><b>Barbara Husto</b><br>Senior Designer<br><br><a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></p>
-        </figcaption>
-    </figure>
-    </div>
-
- 
+	
 </div>
 <!-- team -->
 
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--Contact Starts-->
-<div id="contact" class="spacer">
-
-<div class="container contactform center">
-<h2 class="text-center  wowload fadeInUp">Get in touch to start your project</h2>
-  <div class="row wowload fadeInLeftBig">      
-      <div class="col-sm-6 col-sm-offset-3 col-xs-12">      
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Company">
-        <textarea rows="5" placeholder="Message"></textarea>
-        <button class="btn btn-primary"><i class="fa fa-paper-plane"></i> Send</button>
-      </div>
-  </div>
-
-
-
-</div>
-</div>
-<!--Contact Ends-->
-
-
-
 <!-- Footer Starts -->
 <div class="footer text-center spacer">
-<p class="wowload flipInX"><a href="#"><i class="fa fa-facebook fa-2x"></i></a> <a href="#"><i class="fa fa-instagram fa-2x"></i></a> <a href="#"><i class="fa fa-twitter fa-2x"></i></a> <a href="#"><i class="fa fa-flickr fa-2x"></i></a> </p>
-Copyright 2014 Cyrus Creative Studio. All rights reserved.
+<p class="wowload flipInX">
+<a href="http://www.facebook.com/coolstorehk" target="_blank"><i ><img src="images/facebook.png" style="width:51px;height=34px"/></i></a><a href="mailto:comp5232polyu@gmail.com" target="_blank"><i ><img src="images/email_logo.png" style="width:40px;height=30px"/></i></a>
+</p>
+Copyright 2016 Cool Toy Store. All rights reserved.
 </div>
 <!-- # Footer Ends -->
 <a href="#works" class="gototop "><i class="fa fa-angle-up  fa-3x"></i></a>
-
-
-
-
-
-<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
-<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-    <!-- The container for the modal slides -->
-    <div class="slides"></div>
-    <!-- Controls for the borderless lightbox -->
-    <h3 class="title">Title</h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>
-    <!-- The modal dialog, which will be used to wrap the lightbox content -->    
-</div>
-
-
 
 <!-- jquery -->
 <script src="assets/jquery.js"></script>

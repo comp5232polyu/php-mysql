@@ -19,7 +19,7 @@ include('vars.php');
 
 //Query the DB
 global $mysqli;
-$strsql = "select * from stock order by id desc ";
+$strsql = "select * from stock order by id desc";
 if ($result = $mysqli->query($strsql)) {
    // printf("<br>Select returned %d rows.\n", $result->num_rows);
 	while ($row = $result->fetch_object()) {
@@ -35,10 +35,12 @@ $mysqli->close();
 $lll_route = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 if (isset($_GET['id'])) {
-	$item = $items[$_GET['id'] - 1];
+	$item_size = sizeof($items);
+	$item = $items[$item_size - $_GET['id']];
 }
 
 if (file_exists("views/$lll_route.tpl")) {
+	//echo "views/$lll_route.tpl page not found";
 	ob_start();
 	require_once("views/$lll_route.tpl");
 	$lllpage = ob_get_contents();
@@ -54,7 +56,7 @@ if (file_exists("views/$lll_route.tpl")) {
 
 	echo $lllpage;
 } else {
-	echo "\"$lll_route\" page not found";
+	//echo "\"$lll_route\" page not found";
 	ob_start();
 	require_once("views/home3.tpl");
 	$lllpage = ob_get_contents();
