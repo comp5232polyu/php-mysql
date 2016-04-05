@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> <?php echo $site_title; ?> </title>
-	<meta charset="utf8">  
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-   <link href="/static/bootstrap.min.css" rel="stylesheet" media="screen">
-   <link href="/static/bootstrap-responsive.css" rel="stylesheet">
-   <link href="/static/bootstrap.css" rel="stylesheet">
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title><?php echo $site_title; ?></title>
+
+<!-- Google fonts -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+
+<!-- font awesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- bootstrap -->
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+
+<!-- animate.css -->
+<link rel="stylesheet" href="assets/animate/animate.css" />
+<link rel="stylesheet" href="assets/animate/set.css" />
+
+<!-- gallery -->
+<link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
+
+<!-- favicon -->
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+
+<link rel="stylesheet" href="assets/style.css">
 
   <style type="text/css">
 	body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-	
+        padding-top: 100px; /* 60px to make the container go all the way to the bottom of the topbar */	
       }
-
-	
+	 	
 	/* Custom container */
       .container-narrow {
         margin: 0 auto;
@@ -36,6 +54,21 @@
 	.sidebar-nav {
         padding: 20px 0;
       }
+	  
+	  img.detail-img{
+	   width:800px;
+	   height:600px;
+	}
+	
+	 img.sold-out-thumb{
+	   width:60px;
+	   height:45px;
+	}
+	
+	 img.almost-sold-out-thumb{
+	   width:150px;
+	   height:50px;
+	}
 
       @media (max-width: 980px) {
         /* Enable use of floated navbar text */
@@ -44,37 +77,74 @@
           padding-left: 5px;
           padding-right: 5px;
         }
-	
+		
   </style>
-
 </head>
 <body>
+<div class="topbar animated fadeInLeftBig"></div>
+<div class="navbar-wrapper">
+      <div class="container">
 
-  <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          
-          <a class="brand pull-left" href="/"><em><?php echo $site_title; ?></em></a>
-	  
-          <div class="nav-collapse collapse">
-           
-          </div><!--/.nav-collapse -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="top-nav">
+          <div class="container">
+            <div class="navbar-header">
+              <!-- Logo Starts -->
+              <a class="navbar-brand" href="./#works">
+                   
+                  <img src="images/company_logo.png" alt="logo">
+                
+                </a>
+              <!-- #Logo Ends -->
+
+
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+            </div>
+
+
+            <!-- Nav Starts -->
+            <div class="navbar-collapse  collapse">
+              <ul class="nav navbar-nav navbar-right scroll">
+                 <li class="active"><a href="./#works">Home</a></li>
+                 <li ><a href="./#about">About</a></li>
+                 <li ><a href="./#partners">Partners</a></li>
+                 <!--<li ><a href="#contact">Contact</a></li>-->
+              </ul>
+            </div>
+            <!-- #Nav Ends -->
+
+          </div>
         </div>
+
       </div>
-    </div>  <!-- end of div for nav bar-->
+    </div>
   
   <div class="container">
   <!-- <table class="table table-hover">
   <tr> -->
   <div class="hero-unit">
   <div>
-  <h2><em><?php echo $item->TITLE   ?></em><h2> </div>
+    <br/><br/>
+  <h2><?php echo $item->TITLE   ?>
+  <?php if ($item->QUAN < 1) {?>
+    <img src="images/sold_out.jpg" class="sold-out-thumb"/>
+  <?php }elseif ($item->QUAN < 5){ ?>
+    <img src="images/almost_sold_out.jpg" class="almost-sold-out-thumb"/>
+	  <?php } ?>
+  <h2> 
+  </div>
   <br/>
-  
-		<img src="/static/images/<?php echo $item->IMGSRC ?>" class="sale-photo">
-	
+			<img src="/static/images/<?php echo $item->IMGSRC_D1 ?>">
+		    <br/><br/><br/><br/>
+			<img src="/static/images/<?php echo $item->IMGSRC_D2 ?>">
+		    <br/><br/>
 		<h3>
-			Description:
+			Description: 
 		</h3>
 	
 		<div id="description">
@@ -89,7 +159,7 @@
 
   
 
- 
+     <br/><br/><br/><br/>
   </div> <!-- end of the hero-unit-->
   </div> <!-- end of the container-->
   

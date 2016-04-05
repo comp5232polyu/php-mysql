@@ -50,7 +50,7 @@ if (file_exists("views/$lll_route.tpl")) {
 
 } elseif (($lll_route == "") || ($lll_route == "/")){
 	ob_start();
-	require_once("views/home3.tpl");
+	require_once("views/home.tpl");
 	$lllpage = ob_get_contents();
 	ob_end_clean();
 
@@ -58,7 +58,7 @@ if (file_exists("views/$lll_route.tpl")) {
 } else {
 	//echo "\"$lll_route\" page not found";
 	ob_start();
-	require_once("views/home3.tpl");
+	require_once("views/home.tpl");
 	$lllpage = ob_get_contents();
 	ob_end_clean();
 
