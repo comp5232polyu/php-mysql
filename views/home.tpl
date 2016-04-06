@@ -185,7 +185,7 @@ We also understand how important to communicate with our fans, so we have launch
 	
 	<div class=" col-sm-2 col-xs-4" >
 	<figure class="effect-chico">
-        <img src="images/team/12.jpg" alt="img01" class="img-responsive" />
+        <img src="images/team/sunny.jpg" alt="img01" class="img-responsive" />
         <figcaption style="font-size: 1em">
             <p><b>Sunny Lau</b><br>CEO</p>            
         </figcaption>
@@ -194,7 +194,7 @@ We also understand how important to communicate with our fans, so we have launch
 	
 	<div class=" col-sm-2 col-xs-4">
 	<figure class="effect-chico">
-        <img src="images/team/19.jpg" alt="img01" class="img-responsive" />
+        <img src="images/team/aris.jpg" alt="img01" class="img-responsive" />
         <figcaption style="font-size: 1em">
             <p><b>Aris Leung</b><br>CEO</p>             
         </figcaption>
@@ -203,7 +203,7 @@ We also understand how important to communicate with our fans, so we have launch
 	
 	<div class=" col-sm-2 col-xs-4">
 	<figure class="effect-chico">
-        <img src="images/team/10.jpg" alt="img01" class="img-responsive" />
+        <img src="images/team/philip.jpg" alt="img01" class="img-responsive" />
         <figcaption style="font-size: 1em">
             <p><b>Philip Yip</b><br>Merchandizing Manager</p>            
         </figcaption>
@@ -212,7 +212,7 @@ We also understand how important to communicate with our fans, so we have launch
 
 	<div class=" col-sm-2 col-xs-4">
 	<figure class="effect-chico">
-        <img src="images/team/8.jpg" alt="img01" class="img-responsive" />
+        <img src="images/team/yoyo.jpg" alt="img01" class="img-responsive" />
         <figcaption style="font-size: 1em">
             <p><b>Yoyo Yiu</b><br>Account & Budget Manager</p>                    
         </figcaption>
@@ -221,7 +221,7 @@ We also understand how important to communicate with our fans, so we have launch
 	
 		<div class=" col-sm-2 col-xs-4">
 	<figure class="effect-chico">
-        <img src="images/team/17.jpg" alt="img01" class="img-responsive" />
+        <img src="images/team/becky.jpg" alt="img01" class="img-responsive" />
         <figcaption style="font-size: 1em">
             <p><b>Becky Yeung</b><br>Sales & Marketing Manager</p>            
         </figcaption>
