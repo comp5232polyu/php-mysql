@@ -114,13 +114,13 @@ We also understand how important to communicate with our fans, so we have launch
 <div class="container">
 <div class="row text-center  wowload fadeInDownBig">
   <div class="col-sm-3 col-xs-6">
-  <i class="fa fa-smile-o  fa-5x"></i><h4>24 Clients</h4>
+  <i class="fa fa-smile-o  fa-5x"></i><h4>24k Members</h4>
   </div>
   <div class="col-sm-3 col-xs-6">
-  <i class="fa fa-rocket  fa-5x"></i><h4>1000 Toys</h4>
+  <i class="fa fa-rocket  fa-5x"></i><h4>100k+ Toys</h4>
   </div>
   <div class="col-sm-3 col-xs-6">
-  <i class="fa fa-cloud-download  fa-5x"></i><h4>500 Downloads</h4>
+  <i class="fa fa-paypal  fa-5x"></i><h4>50k+ Transactions</h4>
   </div>
   <div class="col-sm-3 col-xs-6">
   <i class="fa fa-map-marker fa-5x"></i><h4>2 Shops</h4>
