@@ -85,7 +85,7 @@ Expanded Size : (H)645mm X (W)210mm X (L)645mm<br><br>
      '02_h.jpg', '02_d1.jpg', '02_d2.jpg', 2500, 1, 'VOCALOID3 Miku V3 1/4 Figure'),
 	 
 	 	array(9, "Size : 320mm X 150mm X 120mm",
-     '07_h.jpg', '07_d1.jpg', '07_d2.jpg', 500, 10, 'まんぞくさん (Mr Meet)')
+     '07_h.jpg', '07_d1.jpg', '07_d2.jpg', 500, 10, 'まんぞくさん (Tubbs)')
 );
 
 foreach ($prints as $print) {
